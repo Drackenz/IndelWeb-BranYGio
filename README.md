@@ -54,5 +54,6 @@ Para restaurar desde cero: se importá `ej-2.5/esquema.sql` en phpMyAdmin — es
 
 ## Video de demo — Ej 2.5
 
-Ver `images/' y 'videos/' para la evidencia
+Ver `images/' para la evidencia
 
+videos de la demo del proyecto y gif: https://drive.google.com/drive/folders/15H5-g-TvdH4a5AiyoCY0Mv34SMKFm93H?usp=drive_link
