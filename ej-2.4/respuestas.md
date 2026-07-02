@@ -1,0 +1,3 @@
+## ¿Por qué separar modelo y vista? Da un escenario donde esta separación te salva trabajo.
+
+Separar el modelo de la vista sirve porque cada uno cambia por razones distintas. El modelo se encarga de hablar con la base de datos, y la vista solo se encarga de mostrar el HTML. Por ejemplo, si un día el profesor pide que en vez de mostrar la tabla de productos en HTML normal, la queremos mostrar como tarjetas con CSS Grid, solo tendríamos que tocar el archivo de la vista (views/productos/index.php) y no tocar nada del modelo, porque el modelo sigue trayendo los mismos datos. Eso evita que un cambio visual rompa la lógica de la base de datos, y al revés.
