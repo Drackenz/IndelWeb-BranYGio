@@ -1,0 +1,220 @@
+:root {
+  --color-fondo: #f5f7fa;
+
+  --color-principal: #1e3a8a;
+
+  --color-secundario: #2563eb;
+
+  --color-texto: #222;
+
+  --color-blanco: #ffffff;
+
+  --espacio: 20px;
+}
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+  background: var(--color-fondo);
+
+  color: var(--color-texto);
+
+  line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+  background: var(--color-principal);
+
+  color: white;
+
+  padding: 25px;
+
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 15px;
+}
+
+/* NAV */
+
+nav ul {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 25px;
+
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: white;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd43b;
+}
+
+/* GRID */
+
+main {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 30px;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 30px;
+}
+
+/* SECCIONES */
+
+section {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 20px;
+}
+
+/* PROYECTOS */
+
+article {
+  background: #eef4ff;
+
+  padding: 18px;
+
+  margin-top: 15px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+article:hover {
+  transform: translateY(-6px);
+}
+
+/* FORMULARIO */
+
+form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px;
+
+  background: var(--color-secundario);
+
+  color: white;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0f4fd6;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 40px;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: #1e3a8a;
+
+  color: white;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 640px) {
+  nav ul {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
+
+/* ANIMACIÓN */
+
+header {
+  animation: entrada 1s ease;
+}
+
+@keyframes entrada {
+  from {
+    opacity: 0;
+
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
