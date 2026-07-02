@@ -1,0 +1,3 @@
+## ¿Por qué nunca se guardan contraseñas en texto plano? ¿Qué hace bcrypt diferente?
+
+Porque si la base de datos llega a filtrarse, todas las contraseñas de los usuarios quedarían expuestas tal cual, y la gente normalmente reutiliza contraseñas en otras páginas, entonces sería un problema grande. Por eso usamos password_hash(), que convierte la contraseña en un texto cifrado (hash) que no se puede revertir para sacar la contraseña original. Bcrypt es el algoritmo que usa por dentro PASSWORD_DEFAULT, y lo que lo hace diferente es que es lento a propósito, para que si alguien intenta adivinar contraseñas por fuerza bruta, le tome muchísimo tiempo probar cada combinación.
