@@ -54,4 +54,5 @@ Para restaurar desde cero: se importá `ej-2.5/esquema.sql` en phpMyAdmin — es
 
 ## Video de demo — Ej 2.5
 
-Ver `images/gifs/DemoWEB-BranYGio` — recorre registro, login, crear apunte, editar, eliminar y logout.
+Ver `images/' y 'videos/' para la evidencia
+
