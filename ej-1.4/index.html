@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora de Promedio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="contenedor">
+      <h1>Calculadora de Promedio</h1>
+
+      <form id="form-materia">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre de la materia"
+          required
+        />
+
+        <input
+          type="number"
+          name="nota"
+          placeholder="Nota"
+          step="0.1"
+          min="0"
+          max="10"
+          required
+        />
+
+        <input
+          type="number"
+          name="peso"
+          placeholder="Peso (%)"
+          min="1"
+          max="100"
+          required
+        />
+
+        <button type="submit">Agregar</button>
+      </form>
+
+      <p id="error"></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Materia</th>
+
+            <th>Nota</th>
+
+            <th>Peso</th>
+
+            <th>Eliminar</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+
+      <div class="resultado">
+        <h2>Promedio</h2>
+
+        <h1 id="resultado">0.00</h1>
+
+        <p id="estado"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
